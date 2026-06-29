@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SchartzForte — Showroom des relances</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#11150f; --paper:#f6f4ee; --muted:#6f7268; --line:rgba(17,21,15,.1);
+    --green:#3f6b3a; --accent:#c8d6b8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  header.hero{padding:96px 0 56px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+  .eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:600}
+  h1{font-family:'Fraunces',serif;font-weight:430;font-size:clamp(40px,7vw,76px);line-height:1.02;letter-spacing:-.02em;margin:18px 0 0}
+  h1 em{font-style:italic;color:var(--green)}
+  .sub{margin-top:22px;max-width:620px;color:var(--muted);font-size:18px}
+  .meta{margin-top:30px;display:flex;gap:28px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600}
+  main{padding:64px 0 96px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 26px 22px;display:flex;flex-direction:column;gap:16px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(17,21,15,.35)}
+  .card .num{font-family:'Fraunces',serif;font-size:14px;color:var(--muted)}
+  .card h2{font-family:'Fraunces',serif;font-weight:500;font-size:25px;letter-spacing:-.01em;line-height:1.1}
+  .card .sector{font-size:13.5px;color:var(--muted);margin-top:2px}
+  .card .note{font-size:12.5px;color:var(--green);background:var(--accent);align-self:flex-start;padding:3px 10px;border-radius:999px;font-weight:500}
+  .btns{margin-top:auto;display:flex;gap:10px;padding-top:6px}
+  .btns a{flex:1;text-align:center;text-decoration:none;font-weight:600;font-size:14px;padding:12px 14px;border-radius:11px;transition:.2s}
+  .btns a.v1{background:var(--ink);color:#fff}
+  .btns a.v1:hover{background:#000}
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:13.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer b{color:var(--ink);font-family:'Fraunces',serif;font-weight:500}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">SchartzForte · Showroom</p>
+      <h1>Vos sites,<br><em>relancés</em>.</h1>
+      <p class="sub">Premières versions de sites relancés — une maquette finie par client, construite à partir de vos contenus et photos réels. Commerces et artisans du Luxembourg.</p>
+      <div class="meta">
+        <span><b>9</b> clients</span>
+        <span><b>9</b> maquettes en ligne</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+
+      <article class="card">
+        <div>
+          <div class="num">01</div>
+          <h2>Boucherie Kinnen Marc</h2>
+          <div class="sector">Boucherie-charcuterie · Marnach</div>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-boucherie-kinnen/">Voir la maquette</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="num">02</div>
+          <h2>Daubenfeld Frères</h2>
+          <div class="sector">Toiture &amp; ferblanterie · Angelsberg</div>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-toiture-daubenfeld/">Voir la maquette</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="num">03</div>
+          <h2>Boucherie Dimmer</h2>
+          <div class="sector">Boucherie &amp; party service · Clervaux</div>
+          <span class="note">Aucun site actuel — présence web à créer</span>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-boucherie-dimmer/">Voir la maquette</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="num">04</div>
+          <h2>Beim Burg</h2>
+          <div class="sector">Boucherie-charcuterie · Lieler</div>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-beim-burg/">Voir la maquette</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="num">05</div>
+          <h2>Metzlerei Lucien Saeul</h2>
+          <div class="sector">Boucherie-charcuterie · Echternach</div>
+          <span class="note">Aujourd'hui : page Facebook uniquement</span>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-metzlerei-saeul/">Voir la maquette</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="num">06</div>
+          <h2>Metzlerei Beim Jos</h2>
+          <div class="sector">Boucherie-charcuterie · Tadler</div>
+          <span class="note">Aucun site actuel — design sur photos du village</span>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-beim-jos/">Voir la maquette</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="num">07</div>
+          <h2>Pol Winandy</h2>
+          <div class="sector">Paysagiste · Limpach · depuis 1991</div>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-pol-winandy-paysagiste/">Voir la maquette</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="num">08</div>
+          <h2>Bio Metzlerei J.-M. Oswald</h2>
+          <div class="sector">Boucherie bio · Luxembourg — Belair</div>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-bio-metzlerei-oswald/">Voir la maquette</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="num">09</div>
+          <h2>Boulangerie Croissant d'Or</h2>
+          <div class="sector">Boulangerie-pâtisserie · Vianden</div>
+          <span class="note">Aucun site actuel — ville touristique</span>
+        </div>
+        <div class="btns">
+          <a class="v1" href="https://noah-schartz-forte.github.io/schartzforte-croissant-dor-vianden/">Voir la maquette</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="wrap">
+    <span>Maquettes de présentation — images issues uniquement des sources réelles de chaque commerce.</span>
+    <span><b>SchartzForte</b></span>
+  </footer>
+</body>
+</html>
